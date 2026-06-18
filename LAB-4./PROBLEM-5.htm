@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      k = parseInt(prompt("enter the 2 digit number"));
+
+      lastdigit = k % 10;
+      firstdigit = parseInt(k / 10);
+
+      pow = 1;
+      for (i = 0; i < lastdigit; i++) {
+        pow = pow * firstdigit;
+      }
+      document.write(pow);
+    </script>
+  </body>
+</html>
