@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a=parseInt(prompt("enter the number"))
+        digit=0;
+        sum=0;
+        n=a;
+        m=a;
+        while(n>0){
+            digit++
+            n=parseInt(n/10)
+        }
+        
+        while(m>0){
+            sum+= Math.pow(m%10,digit);
+            m= parseInt(m/10);
+        }
+        if(a==sum){
+            document.write("armstrong number");
+        }
+        else{
+            document.write("not armstrong number");
+        }
+    </script>
+</body>
+</html>

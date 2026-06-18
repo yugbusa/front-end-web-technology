@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        num1= parseInt(prompt("enter first number"));
+        num2= parseInt(prompt("enter second number"));
+
+        choise = prompt("+,-,*,/");
+
+        if(choise=='+'){
+            ans= num1+num2;
+            alert("addition is "+ans);
+        }
+        else if(choise=='-'){
+            ans= num1-num2;
+            alert("subtraction is "+ans);
+        }
+        else if(choise=='*'){
+            ans= num1*num2;
+            alert("multiplication is "+ans);
+        }
+        else if(choise=='/'){
+            if(num2==0){
+                alert("division is not possible");
+            }
+            else{
+                ans= num1/num2;
+                alert("division is "+ans);
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
