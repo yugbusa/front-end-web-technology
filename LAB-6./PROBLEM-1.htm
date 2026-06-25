@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      arr = ["a", "b", "c"];
+      document.write("<table>");
+      document.write("<thead class='table table-dark'>");
+      document.write("<th>name</th>");
+      document.write("</thead>");
+
+      document.write("<tbody>");
+      for (i = 0; i < arr.length; i++) {
+        document.write("<tr class='table table-sucess'>");
+        document.write("<td>",arr[i]," </td>");
+        document.write("</tr>");
+      }
+      document.write("</tbody>");
+      document.write("</table>");
+    </script>
+  </body>
+</html>

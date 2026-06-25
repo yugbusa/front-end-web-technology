@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      arr = [
+            {
+                ProductName : "maggi",
+                protein : 17,
+                price : 9.8,
+                brand : "maggi"
+            },
+             {
+                ProductName : "wafer",
+                protein : 18,
+                price : 9.8,
+                brand : "balaji"
+            },
+             {
+                ProductName : "biscuit",
+                protein : 17,
+                price : 9.8,
+                brand : "britannia"
+            },
+             {
+                ProductName : "chocolate",
+                protein : 18,
+                price : 9.8,
+                brand : "cadbury"
+            },
+             
+        ];
+
+      document.write("<table>");
+      document.write("<thead class='table table-dark'>");
+      document.write(`<th>ProductName</th>
+       <th>Protein</th>
+       <th>Price</th>
+       <th>Brand</th>`);
+      document.write("</thead>");
+
+      document.write("<tbody>");
+      for (i = 0; i < arr.length; i++) {
+       document.write(`
+        <tr>
+            <td>${arr[i].ProductName}</td>
+            <td>${arr[i].protein}</td>
+            <td>${arr[i].price}</td>
+            <td>${arr[i].brand}</td>
+            </tr>
+      ` )
+      }
+      document.write("</tbody>");
+      document.write("</table>");
+    </script>
+  </body>
+</html>
