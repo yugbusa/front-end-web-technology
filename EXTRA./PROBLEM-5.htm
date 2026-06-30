@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      dob = parseInt(
+        prompt("Enter dom for type (yyy : mm : dd) to find your age : "),
+      );
+      currentYear = new Date();
+      c = currentYear.getFullYear();
+      age = c - dob;
+      document.write("Your age is : " + age);
+    </script>
+  </body>
+</html>
